@@ -129,7 +129,7 @@ export default function Home() {
           <p className="mt-2 text-sm text-muted">Full-stack e-ticaret uygulaması · Next.js, TypeScript, MongoDB</p>
 
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
-            <Shot src="/taura/kategori.png" alt="TAURA kategori sayfası" className="aspect-[16/8] sm:col-span-2" />
+            <Shot src="/taura/anasayfa.png" alt="TAURA ana sayfası" className="aspect-[16/10] sm:col-span-2" />
             <Shot src="/taura/urun.png" alt="TAURA ürün sayfası" className="aspect-[16/9]" />
             <Shot src="/taura/yonetim.png" alt="TAURA yönetim paneli" className="aspect-[16/9]" />
           </div>
