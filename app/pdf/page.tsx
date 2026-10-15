@@ -94,7 +94,7 @@ const projects = [
   },
   {
     no: "03",
-    title: "Portfolyo Sitesi",
+    title: "Kişisel Web Sitesi",
     kind: "Statik web sitesi · Next.js, GitHub Pages",
     text: "Bu portfolyonun web sürümü; GitHub Actions ile otomatik yayınlanıyor.",
     img: "/portfolyo/masaustu.png",
@@ -256,10 +256,10 @@ export default function PdfPage() {
       {/* Page 4: the portfolio site itself */}
       <section className="sheet">
         <div className="px-[16mm] pt-[14mm]">
-          <ProjectHead no="03" title="Portfolyo Sitesi" subtitle="Statik web sitesi · Next.js, Tailwind CSS, GitHub Pages" />
+          <ProjectHead no="03" title="Kişisel Web Sitesi" subtitle="Statik web sitesi · Next.js, Tailwind CSS, GitHub Pages" />
           <div className="mt-[6mm] grid grid-cols-[1fr_44mm] items-start gap-4">
-            <Shot src="/portfolyo/masaustu.png" alt="Portfolyo sitesi masaüstü görünümü" className="aspect-[16/10]" />
-            <Shot src="/portfolyo/mobil.png" alt="Portfolyo sitesi telefon görünümü" className="aspect-[390/800]" />
+            <Shot src="/portfolyo/masaustu.png" alt="Kişisel web sitesi masaüstü görünümü" className="aspect-[1280/728]" />
+            <Shot src="/portfolyo/mobil.png" alt="Kişisel web sitesi telefon görünümü" className="aspect-[390/800]" />
           </div>
           <p className="mt-[6mm] text-[13.5px] leading-relaxed">
             Bu portfolyonun web sürümü. Next.js ile statik dosyalar olarak derleniyor ve her güncellemede GitHub
