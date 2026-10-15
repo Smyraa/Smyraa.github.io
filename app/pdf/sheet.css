@@ -1,0 +1,29 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+/* Each .sheet is one A4 page. On screen they are shown like a document preview. */
+.sheet {
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  position: relative;
+  background: var(--color-paper);
+}
+
+@media screen {
+  body:has(.sheet) {
+    background: #d9d3cb;
+  }
+  .sheet {
+    margin: 24px auto;
+    box-shadow: 0 6px 30px rgb(0 0 0 / 0.18);
+  }
+}
+
+@media print {
+  .sheet:not(:last-child) {
+    break-after: page;
+  }
+}
