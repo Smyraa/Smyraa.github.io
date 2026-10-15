@@ -258,7 +258,7 @@ export default function PdfPage() {
         <div className="px-[16mm] pt-[14mm]">
           <ProjectHead no="03" title="Kişisel Web Sitesi" subtitle="Statik web sitesi · Next.js, Tailwind CSS, GitHub Pages" />
           <div className="mt-[6mm] grid grid-cols-[1fr_44mm] items-start gap-4">
-            <Shot src="/portfolyo/masaustu.png" alt="Kişisel web sitesi masaüstü görünümü" className="aspect-[1280/728]" />
+            <Shot src="/portfolyo/masaustu.png" alt="Kişisel web sitesi masaüstü görünümü" className="aspect-[1280/646]" />
             <Shot src="/portfolyo/mobil.png" alt="Kişisel web sitesi telefon görünümü" className="aspect-[390/800]" />
           </div>
           <p className="mt-[6mm] text-[13.5px] leading-relaxed">

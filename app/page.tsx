@@ -68,12 +68,6 @@ const nav = [
   { href: "#iletisim", label: "İletişim" },
 ];
 
-const facts = [
-  { value: "2", label: "tamamlanmış e-ticaret projesi" },
-  { value: "Full-stack", label: "arayüz, sunucu ve veritabanı" },
-  { value: "iyzico", label: "ödeme entegrasyonu" },
-];
-
 type Project = {
   no: string;
   title: string;
@@ -184,16 +178,13 @@ export default function Home() {
           <div>
             <p className="enter inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs text-gold-light" style={{ "--d": "0.15s" } as React.CSSProperties}>
               <span className="h-1.5 w-1.5 rounded-full bg-gold-light" />
-              Yazılım Mühendisliği · 4. sınıf
+              Yazılım Mühendisliği 4. Sınıf Öğrencisi · Web Geliştirme
             </p>
             <h1 className="enter mt-6 font-display text-5xl leading-[1.02] font-medium sm:text-7xl" style={{ "--d": "0.25s" } as React.CSSProperties}>
               Sümeyra
               <br />
               <span className="text-gold-light italic">Eryılmaz</span>
             </h1>
-            <p className="enter mt-6 max-w-md text-lg leading-relaxed text-cream/75" style={{ "--d": "0.35s" } as React.CSSProperties}>
-              Fikirden çalışan ürüne kadar, arayüzü ve sunucusuyla uçtan uca web uygulamaları geliştiriyorum.
-            </p>
             <div className="enter mt-8 flex flex-wrap gap-3" style={{ "--d": "0.45s" } as React.CSSProperties}>
               <a href="#projeler" className="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-espresso transition hover:bg-gold-light">
                 Projelerimi gör
@@ -223,33 +214,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="border-t border-cream/10">
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-4 py-6 sm:grid-cols-3 sm:px-8">
-            {facts.map((f, i) => (
-              <div key={f.label} className="enter flex items-baseline gap-3" style={{ "--d": `${0.6 + i * 0.1}s` } as React.CSSProperties}>
-                <span className="font-display text-2xl text-gold-light">{f.value}</span>
-                <span className="text-sm text-cream/60">{f.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </header>
 
       <main className="mx-auto max-w-6xl px-4 sm:px-8">
-        <section id="hakkimda" className="reveal grid scroll-mt-6 gap-10 py-20 md:grid-cols-[1fr_1.2fr] md:gap-16">
+        <section id="hakkimda" className="reveal grid scroll-mt-6 gap-10 py-20 md:grid-cols-[1.4fr_1fr] md:items-start md:gap-16">
           <div>
             <Label>Hakkımda</Label>
-            <h2 className="mt-4 font-display text-4xl leading-tight font-medium sm:text-5xl">
-              Çalışan, test edilmiş <span className="text-gold italic">ürünler</span> üretmeyi seviyorum.
-            </h2>
-          </div>
-          <div>
-            <p className="text-lg leading-relaxed">
+            <p className="mt-4 text-lg leading-relaxed">
               Web uygulamaları geliştirmeye odaklanıyorum. Next.js ve TypeScript ile arayüzü ve sunucu tarafını
               birlikte geliştiriyor, verileri MongoDB&apos;de modelliyorum. Bir uygulamayı fikir aşamasından
               çalışan, test edilmiş bir ürüne kadar götürmeyi önemsiyorum.
             </p>
-            <div className="mt-8 flex items-center gap-4 rounded-2xl border border-line bg-cream/60 p-5">
+          </div>
+          <div className="md:pt-8">
+            <div className="flex items-center gap-4 rounded-2xl border border-line bg-cream/60 p-5">
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-espresso font-display text-xl text-gold-light">
                 4
               </span>
@@ -286,7 +264,6 @@ export default function Home() {
           <div className="reveal flex flex-wrap items-end justify-between gap-4">
             <div>
               <Label>Projelerim</Label>
-              <h2 className="mt-4 font-display text-4xl leading-tight font-medium sm:text-5xl">Seçilmiş çalışmalar</h2>
             </div>
             <p className="max-w-sm text-sm text-muted">Kaynak kodları talep üzerine paylaşılabilir.</p>
           </div>
@@ -301,10 +278,7 @@ export default function Home() {
       <section id="iletisim" className="hero-bg scroll-mt-6 text-cream">
         <div className="reveal mx-auto max-w-6xl px-4 py-20 text-center sm:px-8">
           <Label>İletişim</Label>
-          <h2 className="mx-auto mt-4 max-w-2xl font-display text-4xl leading-tight font-medium sm:text-5xl">
-            Bir staj ya da iş fırsatı için <span className="text-gold-light italic">konuşalım.</span>
-          </h2>
-          <div className="mt-10 flex flex-wrap justify-center gap-3">
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a
               href={`mailto:${email}`}
               className="flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-espresso transition hover:bg-gold-light"
