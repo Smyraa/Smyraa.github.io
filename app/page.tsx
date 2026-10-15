@@ -26,6 +26,15 @@ const tauraTechnical = [
   "Ayrı test veritabanında otomatik HTTP ve birim testleri",
 ];
 
+const sereniteFeatures = [
+  "Mağaza vitrini, üyelik ve sepet",
+  "iyzico Checkout Form ile ödeme (kart bilgisi sunucuya gelmez)",
+  "Sipariş takibi, kupon kodu ve e-posta bildirimleri",
+  "Yönetim paneli: ürün, sipariş ve stok yönetimi",
+];
+
+const sereniteTech = ["Node.js", "Express", "SQLite", "HTML", "CSS", "JavaScript", "iyzico"];
+
 const tauraTech = ["Next.js", "React", "TypeScript", "MongoDB", "Tailwind CSS", "iyzico", "sharp"];
 
 function MailIcon() {
@@ -167,6 +176,33 @@ export default function Home() {
             ))}
           </div>
           <p className="mt-4 text-sm text-muted">Kaynak kodu talep üzerine paylaşılabilir.</p>
+        </section>
+
+        <section className="border-t border-line py-14">
+          <h2 className="font-display text-4xl leading-none font-medium">SÉRÉNITÉ</h2>
+          <p className="mt-2 text-sm text-muted">Ev giyimi e-ticaret sitesi · Node.js, Express, SQLite</p>
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            <Shot src="/serenite/anasayfa.png" alt="SÉRÉNITÉ ana sayfası" className="aspect-[16/10] sm:col-span-2" />
+            <Shot src="/serenite/urun.png" alt="SÉRÉNITÉ ürün sayfası" className="aspect-[16/9]" />
+            <Shot src="/serenite/yonetim.png" alt="SÉRÉNITÉ yönetim paneli" className="aspect-[16/9]" />
+          </div>
+          <p className="mt-8 max-w-3xl text-base leading-relaxed">
+            Bir ev giyimi ve pijama markası için geliştirdiğim e-ticaret sitesi. Ön yüz saf HTML, CSS ve JavaScript ile
+            yazıldı; Express sunucusu ve tek dosyalık SQLite veritabanı ile ek bir veritabanı sunucusu gerektirmeden çalışıyor.
+          </p>
+          <ul className="mt-6 grid gap-2 md:grid-cols-2">
+            {sereniteFeatures.map((f) => (
+              <Bullet key={f}>{f}</Bullet>
+            ))}
+          </ul>
+          <div className="mt-6 flex flex-wrap gap-1.5">
+            {sereniteTech.map((t) => (
+              <span key={t} className="rounded bg-espresso px-2 py-0.5 text-xs text-cream">
+                {t}
+              </span>
+            ))}
+          </div>
         </section>
       </main>
 
